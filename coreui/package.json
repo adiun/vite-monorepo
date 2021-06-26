@@ -1,0 +1,12 @@
+{
+  "name": "@adiun/vm-coreui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "license": "MIT"
+}
