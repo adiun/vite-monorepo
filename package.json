@@ -6,7 +6,7 @@
     "start": "npm run --prefix app dev",
     "build": "npm run --prefix app build",
     "serve": "npm run --prefix app serve",
-    "clean-slate": "npx -y rimraf node_modules **/node_modules/ package-lock.json && npm i"
+    "clean": "npx -y rimraf node_modules **/node_modules/ package-lock.json && npm i"
   },
   "author": "Adi Unnithan",
   "license": "MIT",
