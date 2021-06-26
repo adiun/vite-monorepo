@@ -2,10 +2,10 @@
   "name": "@adiun/vm-frontend",
   "version": "0.1.0",
   "scripts": {
-    "dev": "vite",
-    "test": "tsc",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "vite",
+    "test": "tsc"
   },
   "dependencies": {
     "@adiun/vm-coreui": "0.1.0",

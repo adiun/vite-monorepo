@@ -1,20 +1,18 @@
 {
+  "extends": "../scaffold/tsconfig.common.json",
   "compilerOptions": {
     "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
-    "forceConsistentCasingInFileNames": true,
+    "declarationDir": "lib",
     "isolatedModules": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "esnext",
-    "moduleResolution": "Node",
     "noEmit": true,
     "resolveJsonModule": true,
+    "rootDir": "src",
     "skipLibCheck": false,
-    "strict": true,
     "target": "ESNext",
     "types": ["vite/client"]
-    // types for import.meta.env
-  }
+  },
+  "include": ["src"]
 }
