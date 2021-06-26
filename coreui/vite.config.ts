@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import { name, version } from "./package.json";
-const path = require("path");
+import path from "path";
 import typescript2 from "rollup-plugin-typescript2";
 
 export default defineConfig({
