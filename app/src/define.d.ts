@@ -1,4 +1,3 @@
-
 // sync with vite.config.ts define settings
-type PkgJson = { name: string, version:  string; };
-declare var pkgJson: PkgJson;
+type PkgJson = { readonly name: string; readonly version: string };
+declare let pkgJson: PkgJson;

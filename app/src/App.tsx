@@ -1,4 +1,3 @@
-import React from "react";
 import { TestCoreComponent } from "@adiun/vm-coreui";
 
 function App(): JSX.Element {

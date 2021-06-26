@@ -1,14 +1,22 @@
 {
   "name": "@adiun/vite-monorepo",
+  "author": "Adi Unnithan",
   "version": "0.1.0",
   "main": "index.js",
+  "engines": {
+    "node": "^14.15.0",
+    "npm": "^7.17.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.5"
+  },
   "scripts": {
     "build": "npm run build -ws",
-    "clean": "npx -y rimraf node_modules **/node_modules/ package-lock.json && npm i"
+    "clean": "npx -y rimraf node_modules **/node_modules/ package-lock.json && npm i",
+    "lint": "npm run lint -ws"
   },
-  "author": "Adi Unnithan",
-  "license": "MIT",
   "workspaces": [
+    "scaffold",
     "coreui",
     "app"
   ]

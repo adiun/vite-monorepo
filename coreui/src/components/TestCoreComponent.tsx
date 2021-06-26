@@ -1,7 +1,3 @@
-import React from 'react';
-
-export const TestCoreComponent = () => {
-  return (
-      <div>Core UI component</div>
-  )
-}
+export const TestCoreComponent = (): JSX.Element => {
+  return <div>Core UI component</div>;
+};

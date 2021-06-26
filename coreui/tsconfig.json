@@ -1,18 +1,8 @@
 {
-  "extends": "../scaffold/tsconfig.common.json",
+  "extends": "@adiun/vm-scaffold/tsconfig.ui.json",
   "compilerOptions": {
-    "allowJs": false,
     "declarationDir": "lib",
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "module": "esnext",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "rootDir": "src",
-    "skipLibCheck": false,
-    "target": "ESNext",
-    "types": ["vite/client"]
+    "rootDir": "src"
   },
   "include": ["src"]
 }
