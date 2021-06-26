@@ -9,7 +9,7 @@
   "author": "Adi Unnithan",
   "license": "MIT",
   "workspaces": [
-    "app",
-    "coreui"
+    "coreui",
+    "app"
   ]
 }

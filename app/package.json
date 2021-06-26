@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "test": "tsc",
-    "build": "vite build --base=/vite-monorepo/",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
