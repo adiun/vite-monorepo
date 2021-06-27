@@ -46,7 +46,6 @@
     "eslint-import-resolver-typescript": "2.4.0",
     "eslint-plugin-functional": "3.1.0",
     "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-json-files": "1.1.0",
     "eslint-plugin-mui-unused-classes": "1.0.3",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react-hooks": "4.2.0",
