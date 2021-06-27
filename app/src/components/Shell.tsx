@@ -1,17 +1,17 @@
 import { ReactNode } from "react";
 
-import { useFlights } from "../context/AppServicesContext";
+import { useSetFlights } from "../context/AppServicesContext";
 
 export interface Props {
   readonly children?: ReactNode;
 }
 
 export const Shell = ({ children }: Props): JSX.Element => {
-  const flights = useFlights()();
+  const setFlights = useSetFlights();
+  setFlights({ disableAuth: false });
   return (
     <main>
-      <p>Disable Auth: {flights.disableAuth}</p>
-      <p>Login URL: {flights.loginUrl}</p>
+      <p>Shell</p>
       <div>{children}</div>
     </main>
   );

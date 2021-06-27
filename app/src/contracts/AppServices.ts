@@ -1,5 +1,5 @@
 import { Flights } from "./Flights";
 
 export interface AppServices {
-  readonly getFlights: () => Flights;
+  readonly setFlights: (flights: Flights) => void;
 }

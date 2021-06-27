@@ -7,4 +7,5 @@ const [AppContextProvider, useApiServices] =
 
 export { AppContextProvider };
 
-export const useFlights = (): (() => Flights) => useApiServices().getFlights;
+export const useSetFlights = (): ((flights: Flights) => void) =>
+  useApiServices().setFlights;
