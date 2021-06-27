@@ -1,3 +1,6 @@
+import jest from "jest-mock";
+window.jest = jest;
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +9,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
