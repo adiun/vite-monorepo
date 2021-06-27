@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 import { AppContextProvider } from "../context/AppServicesContext";
 import { createMockAppServices } from "./MockAppServices";
 
 interface Props {
-  readonly children: React.ReactNode;
+  readonly children: ReactNode;
 }
 
 export const MockAppContextProvider = ({ children }: Props): JSX.Element => {

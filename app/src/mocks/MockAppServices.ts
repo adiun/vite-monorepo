@@ -1,5 +1,10 @@
 import { AppServices } from "../contracts/AppServices";
 
 export const createMockAppServices = (): AppServices => ({
-  getFlights: jest.fn(),
+  getFlights: () => {
+    console.log(jest);
+    return {
+      disableAuth: false,
+    };
+  },
 });

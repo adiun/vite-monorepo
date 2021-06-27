@@ -1,5 +1,4 @@
 import { Meta, Story } from "@storybook/react";
-import React from "react";
 
 import { MockAppContextProvider } from "../mocks/MockAppContextProvider";
 import { Props, Shell } from "./Shell";
