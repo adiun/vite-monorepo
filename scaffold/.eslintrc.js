@@ -53,7 +53,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["warn"],
     "import/no-named-as-default": "off",
     "import/default": "off",
-    "json-files/rule-name": "error",
+    "json-files/sort-package-name": "error",
     "no-restricted-imports": [
       "error",
       {
