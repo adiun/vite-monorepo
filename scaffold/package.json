@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "echo 'No build for scaffold project'",
-    "lint": "echo 'No lint for scaffold project'"
+    "lint": "echo 'No lint for scaffold project'",
+    "start": "echo 'No start for scaffold project'"
   }
 }
