@@ -13,7 +13,13 @@ module.exports = {
     "plugin:unicorn/recommended",
     "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with Prettier.
   ],
-  ignorePatterns: ["dist/", "lib/", "node_modules/", ".eslintrc.js"],
+  ignorePatterns: [
+    "dist/",
+    "lib/",
+    "node_modules/",
+    ".eslintrc.js",
+    "vite.config.ts",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2021,
