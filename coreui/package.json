@@ -2,14 +2,19 @@
   "name": "@adiun/vm-coreui",
   "version": "0.1.0",
   "private": true,
+  "sideEffects": false,
   "files": [
     "package.json",
     "lib"
   ],
-  "main": "./lib/index.es.js",
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
   "types": "./lib/index.d.ts",
   "exports": {
-    ".": "./lib/index.es.js"
+    ".": {
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
+    }
   },
   "scripts": {
     "build": "npm-run-all --parallel build:vite build:types",

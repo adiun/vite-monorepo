@@ -1,6 +1,7 @@
 {
   "name": "@adiun/vm-frontend",
   "version": "0.1.0",
+  "sideEffects": false,
   "scripts": {
     "build": "npm-run-all --parallel build:vite build:types",
     "build:vite": "vite build",

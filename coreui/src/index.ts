@@ -1,3 +1,4 @@
+import { Another } from "./components/Another";
 import { TestCoreComponent } from "./components/TestCoreComponent";
 
-export { TestCoreComponent };
+export { Another, TestCoreComponent };
