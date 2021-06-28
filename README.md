@@ -1,4 +1,8 @@
 # vite-monorepo
 
-A Vite and ESBuild based monorepo using NPM 7 Workspaces, Typescript, and React 
+A monorepo using:
 
+- Vite / ESBuild
+- NPM 7 Workspaces
+- Typescript and Typescript Project References
+- React component library

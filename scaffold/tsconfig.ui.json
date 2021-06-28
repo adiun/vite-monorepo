@@ -7,7 +7,6 @@
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "esnext",
-    "noEmit": true,
     "target": "ESNext"
   }
 }

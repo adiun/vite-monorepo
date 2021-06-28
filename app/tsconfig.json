@@ -1,6 +1,13 @@
 {
   "extends": "@adiun/vm-scaffold/tsconfig.ui.json",
   "compilerOptions": {
+    "noEmit": true,
     "rootDir": "src"
-  }
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../coreui"
+    }
+  ]
 }

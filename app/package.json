@@ -2,7 +2,9 @@
   "name": "@adiun/vm-frontend",
   "version": "0.1.0",
   "scripts": {
-    "build": "vite build",
+    "build": "npm-run-all --parallel build:vite build:types",
+    "build:vite": "vite build",
+    "build:types": "tsc --build",
     "lint:eslint": "eslint ./src --ext js,ts,tsx --max-warnings 0",
     "lint:stylelint": "stylelint '**/*.ts[x]'",
     "lint": "npm-run-all --parallel lint:eslint lint:stylelint",

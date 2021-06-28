@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import { name, version } from "./package.json";
 import path from "path";
-import typescript2 from "rollup-plugin-typescript2";
 
 export default defineConfig({
   build: {
@@ -27,13 +26,7 @@ export default defineConfig({
   esbuild: {
     jsxInject: `import React from 'react'`,
   },
-  plugins: [
-    reactRefresh(),
-    {
-      ...typescript2(),
-      apply: "build",
-    },
-  ],
+  plugins: [reactRefresh()],
   define: {
     pkgJson: { name, version },
   },
