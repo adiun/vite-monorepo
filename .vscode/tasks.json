@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "coreui start",
+      "label": "start: coreui",
       "type": "shell",
       "command": "npm start",
       "isBackground": true,
@@ -37,10 +37,10 @@
       ]
     },
     {
-      "label": "app start",
+      "label": "start: all",
       "type": "shell",
       "command": "npm start",
-      "dependsOn": ["coreui start"],
+      "dependsOn": ["start: coreui"],
       "options": {
         "cwd": "${workspaceFolder}/app"
       },
@@ -49,6 +49,60 @@
         "reveal": "always",
         "focus": false,
         "group": "frontend",
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "storybook: coreui",
+      "type": "shell",
+      "command": "npm run storybook:noui",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/coreui"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "group": "storybook",
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": "Storybook [\\d\\.]+ started"
+          }
+        }
+      ]
+    },
+    {
+      "label": "storybook: all",
+      "type": "shell",
+      "command": "npm run storybook",
+      "dependsOn": ["storybook: coreui"],
+      "options": {
+        "cwd": "${workspaceFolder}/app"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "group": "storybook",
         "panel": "new",
         "showReuseMessage": true,
         "clear": false

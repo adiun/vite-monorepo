@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "sideEffects": false,
   "scripts": {
-    "build": "npm-run-all --parallel build:vite build:types",
-    "build:vite": "vite build",
     "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "build": "npm-run-all --parallel build:vite build:types",
     "lint:eslint": "eslint ./src --ext js,ts,tsx --max-warnings 0",
     "lint:stylelint": "stylelint '**/*.ts[x]'",
     "lint": "npm-run-all --parallel lint:eslint lint:stylelint",
     "serve": "vite preview",
     "start": "vite",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "test": "tsc"
+    "storybook:build": "build-storybook",
+    "storybook": "start-storybook -p 6007"
   },
   "dependencies": {
     "@adiun/vm-coreui": "0.1.0",
