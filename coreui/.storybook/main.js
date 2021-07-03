@@ -1,3 +1,5 @@
+const nodePolyfills = require("rollup-plugin-node-polyfills");
+
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
@@ -22,6 +24,7 @@ module.exports = {
             "react-dom": "ReactDOM",
           },
         },
+        plugins: [nodePolyfills()],
       },
     };
   },
