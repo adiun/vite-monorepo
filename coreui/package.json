@@ -16,19 +16,6 @@
       "require": "./lib/index.umd.js"
     }
   },
-  "scripts": {
-    "build:types": "tsc --build",
-    "build:vite": "vite build",
-    "build": "npm-run-all --parallel build:vite build:types",
-    "lint:eslint": "eslint ./src --ext js,ts,tsx --max-warnings 0",
-    "lint:stylelint": "stylelint '**/*.ts[x]'",
-    "lint": "npm-run-all --parallel lint:eslint lint:stylelint",
-    "start": "npm run build:vite -- --watch",
-    "storybook:build": "build-storybook",
-    "storybook:noui": "bash ./tools/storybook_noui.sh",
-    "storybook": "start-storybook -p 6006",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
     "@microsoft/eslint-plugin-sdl": "0.1.6",
     "@storybook/addon-a11y": "6.3.0",
@@ -79,6 +66,19 @@
   "peerDependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "scripts": {
+    "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "build": "npm-run-all --parallel build:vite build:types",
+    "lint:eslint": "eslint ./src --ext js,ts,tsx --max-warnings 0",
+    "lint:stylelint": "stylelint '**/*.ts[x]'",
+    "lint": "npm-run-all --parallel lint:eslint lint:stylelint",
+    "start": "npm run build:vite -- --watch",
+    "storybook:build": "build-storybook",
+    "storybook:noui": "bash ./tools/storybook_noui.sh",
+    "storybook": "start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "dependencies": {}
