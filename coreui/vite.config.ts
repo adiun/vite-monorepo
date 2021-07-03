@@ -22,11 +22,11 @@ export default defineConfig({
       },
     },
   },
+  define: {
+    pkgJson: { name, version },
+  },
   esbuild: {
     jsxInject: `import React from 'react'`,
   },
   plugins: [reactRefresh()],
-  define: {
-    pkgJson: { name, version },
-  },
 });
