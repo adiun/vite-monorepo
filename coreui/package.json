@@ -80,6 +80,5 @@
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }

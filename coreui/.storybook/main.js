@@ -7,10 +7,6 @@ module.exports = {
   async viteFinal(config) {
     return {
       ...config,
-      define: {
-        ...config.define,
-        global: "window",
-      },
       esbuild: {
         ...config.esbuild,
         jsxInject: `import React from 'react'`,
