@@ -25,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
     "@vitejs/plugin-react-refresh": "1.3.3",
+    "creevey": "^0.7.33",
     "eslint-config-prettier": "6.15.0",
     "eslint-import-resolver-typescript": "2.4.0",
     "eslint-plugin-functional": "3.1.0",
@@ -58,6 +59,7 @@
     "serve": "vite preview",
     "start": "vite",
     "storybook:build": "build-storybook",
-    "storybook": "start-storybook -p 6007"
+    "storybook": "start-storybook -p 6007",
+    "test": "creevey -p 3001"
   }
 }

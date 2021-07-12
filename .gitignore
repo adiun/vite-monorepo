@@ -1,6 +1,7 @@
 .DS_Store
 lib
 storybook-static/
+report/
 
 # Logs
 logs
