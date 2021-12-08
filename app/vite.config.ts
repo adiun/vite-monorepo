@@ -1,17 +1,10 @@
-import reactRefresh from "@vitejs/plugin-react-refresh";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-import { name, version } from "./package.json";
-
+// https://vitejs.dev/config/
 export default defineConfig({
-  define: {
-    pkgJson: { name, version },
-  },
-  esbuild: {
-    jsxInject: `import React from 'react'`,
-  },
-  plugins: [reactRefresh()],
+  plugins: [react()],
   server: {
     open: true,
   },
-});
+})

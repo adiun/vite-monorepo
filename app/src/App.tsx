@@ -1,9 +1,6 @@
-import { TestCoreComponent } from "@adiun/vm-coreui";
-
 function App(): JSX.Element {
   return (
     <div>
-      <TestCoreComponent />
       <div>Vite + React + Typescript + Storybook test</div>
     </div>
   );
