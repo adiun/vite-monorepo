@@ -1,0 +1,23 @@
+{
+  "extends": "@adiun/vm-scaffold/tsconfig.ui.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "types": ["vite-plugin-svgr/client"],
+    "useDefineForClassFields": true
+  }
+}
