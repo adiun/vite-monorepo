@@ -16,8 +16,8 @@
     "stylelint-config-idiomatic-order": "8.1.0"
   },
   "peerDependencies": {
-    "eslint": "8.2.0",
-    "prettier": "2.6.0",
+    "eslint": "8.13.0",
+    "prettier": "2.6.2",
     "stylelint": "13.13.1"
   },
   "scripts": {
