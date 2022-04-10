@@ -4,8 +4,8 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm-run-all --parallel build:types build:react",
-    "build:types": "tsc --build",
     "build:react": "vite build",
+    "build:types": "tsc --build",
     "serve": "vite preview",
     "start": "vite"
   },
@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "1.3.0",
+    "eslint": "8.13.0",
+    "prettier": "2.6.2",
+    "stylelint": "13.13.1",
     "typescript": "4.6.3",
     "vite": "2.9.1",
     "vite-plugin-svgr": "1.1.0"
