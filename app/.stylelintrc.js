@@ -1,5 +1,3 @@
-const scaffoldConfig = require("@adiun/vm-scaffold/.stylelintrc");
-
 module.exports = {
-  ...scaffoldConfig,
+  extends: ["@adiun/vm-scaffold/stylelint"],
 };
